@@ -1,6 +1,5 @@
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 public class Main {
@@ -48,17 +47,8 @@ public class Main {
         Ex5.numbers();
     }
 
-    static void print(int[] arr) {
-        System.out.println(Arrays.toString(arr));
-    }
-
-    static int fuctorial(int n) {
-        return (n > 0) ? n * fuctorial(n - 1) : 1;
-    }
-
-
     public static ArrayList<ProductEx1> getMaxCost() {
-        ArrayList<ProductEx1> arrayProductEx1 = new ArrayList<ProductEx1>();
+        ArrayList<ProductEx1> arrayProductEx1 = new ArrayList<>();
         arrayProductEx1.add(new ProductEx1("Ламинат Высший", 1200, 1));
         arrayProductEx1.add(new ProductEx1("Обои", 1000, 3));
         arrayProductEx1.add(new ProductEx1("Плитка", 900, 3));
@@ -70,7 +60,7 @@ public class Main {
     }
 
     public static ArrayList<ProductEx2> getProducts() {
-        ArrayList<ProductEx2> arrayProductEx2 = new ArrayList<ProductEx2>();
+        ArrayList<ProductEx2> arrayProductEx2 = new ArrayList<>();
         arrayProductEx2.add(new ProductEx2("Стол", "Италия", 20, 25000, 1));
         arrayProductEx2.add(new ProductEx2("Стул", "Италия", 5, 5000, 1));
         arrayProductEx2.add(new ProductEx2("Тумба", "Италия", 7, 8500, 1));
